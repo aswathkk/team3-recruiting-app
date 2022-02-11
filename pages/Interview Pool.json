@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1936,
+          "rightColumn": 1168,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -121,6 +121,9 @@
               "dynamicBindingPathList": [
                 {
                   "key": "defaultTab"
+                },
+                {
+                  "key": "primaryColor"
                 }
               ],
               "children": [
@@ -538,7 +541,11 @@
                       "parentColumnSpace": 18.0625,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 0,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "primaryColor"
+                        }
+                      ],
                       "gridType": "vertical",
                       "enhancements": true,
                       "children": [
@@ -1333,6 +1340,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "FormButton1",
+                              "onClick": "{{insertInterviewer.run()}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.c8f649ed.svg",
@@ -1342,6 +1350,11 @@
                               "hideCard": true,
                               "animateLoading": true,
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 23,
                               "dynamicBindingPathList": [
                                 {
@@ -1535,7 +1548,17 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "primaryColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "fontFamily"
+                                }
+                              ],
                               "countryCode": "US",
                               "labelStyle": "",
                               "isDisabled": false,
@@ -1550,7 +1573,7 @@
                               "parentId": "8baz5pmi1n",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "0px",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "iconAlign": "left",
                               "defaultText": ""
                             }
