@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "GetInterviewFeedbacks",
+    "name": "AddInterviewFeedback",
     "datasource": {
       "pluginId": "mongo-plugin",
       "messages": [],
@@ -18,31 +18,25 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
-        "command": "FIND",
+        "command": "INSERT",
         "collection": "interviewFeedback",
-        "find": {
-          "query": "{\"candidateId\": {{appsmith.store.currentCandidate._id}} }"
+        "insert": {
+          "documents": "{\"candidateId\": \"123456\",\n    \"interviewerId\": \"123456\",\n    \"interviewRound\": \"roundIdHere\",\n    \"feedback\": \"description Here\"}"
         }
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.find.query"
-      }
-    ],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "appsmith.store.currentCandidate._id"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Candidate Management_GetInterviewFeedbacks",
+  "id": "Candidate Management_AddInterviewFeedback",
   "deleted": false,
-  "gitSyncId": "62064911c36e5e39b5b25e04_6206642fcfed45736718b689"
+  "gitSyncId": "62064911c36e5e39b5b25e04_620665d8cfed45736718b68f"
 }

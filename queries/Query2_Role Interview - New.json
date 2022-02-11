@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Query1",
+    "name": "Query2",
     "datasource": {
       "pluginId": "mongo-plugin",
       "messages": [],
@@ -14,21 +14,19 @@
     },
     "pageId": "Role Interview - New",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "{\n  \"insert\": \"roles\",\n  \"documents\": [\n    {\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"interviewRounds\": 1,\n      \"jobDescription\": \"new value\",\n      \"name\": \"new value\",\n    }\n  ]\n}\n",
       "formData": {
         "insert": {
-          "documents": "[{      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n\t\t\t\tname: roundName.text,\n\t\t\t\tinterviewRounds: roundOrder.text,\n\t\t\t\tjobDescription: roundDesc.text\n}]"
+          "documents": "[{      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"interviewRounds\": 1,\n      \"jobDescription\": \"new value\",\n      \"name\": \"new value\",\n}]"
         },
-        "collection": "interviewRounds",
+        "collection": "roles",
         "command": "INSERT",
         "smartSubstitution": true
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -38,7 +36,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Role Interview - New_Query1",
+  "id": "Role Interview - New_Query2",
   "deleted": false,
-  "gitSyncId": "62064911c36e5e39b5b25e04_620664bbcfed45736718b68b"
+  "gitSyncId": "62064911c36e5e39b5b25e04_6206650acfed45736718b68d"
 }

@@ -119,7 +119,7 @@
                           "children": [
                             {
                               "boxShadow": "none",
-                              "widgetName": "RadioGroup1",
+                              "widgetName": "hire",
                               "displayName": "Radio Group",
                               "iconSVG": "/static/media/icon.ba2b2ee0.svg",
                               "topRow": 41,
@@ -172,6 +172,7 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Button1",
+                              "onClick": "{{AddInterviewFeedback.run()}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca02633.svg",
@@ -183,6 +184,11 @@
                               "animateLoading": true,
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 24.176239013671875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 32,
                               "dynamicBindingPathList": [
                                 {
@@ -500,13 +506,13 @@
           "Container2",
           "Container3",
           "MainContainer",
-          "RadioGroup1",
           "Text1",
           "Text3",
           "Text5",
           "Text6",
           "Text7",
           "Text8",
+          "hire",
           "textEditor"
         ],
         "validOnPageLoadActions": true,

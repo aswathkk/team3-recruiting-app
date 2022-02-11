@@ -519,6 +519,18 @@
                         },
                         {
                           "key": "primaryColor"
+                        },
+                        {
+                          "key": "template.Text5.text"
+                        },
+                        {
+                          "key": "template.Text2.text"
+                        },
+                        {
+                          "key": "template.Text3.text"
+                        },
+                        {
+                          "key": "template.Text4.text"
                         }
                       ],
                       "gridType": "vertical",
@@ -1410,7 +1422,7 @@
                               "template": {
                                 "Text11": {
                                   "isVisible": true,
-                                  "text": "{{List2.listData.map((currentItem) => currentItem.name)}}",
+                                  "text": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  currentItem.feedback;\n              })();\n            })}}",
                                   "fontSize": "1rem",
                                   "fontStyle": "BOLD",
                                   "textAlign": "LEFT",
@@ -1445,7 +1457,7 @@
                                 },
                                 "Text12": {
                                   "isVisible": true,
-                                  "text": "{{List2.listData.map((currentItem) => currentItem.id)}}",
+                                  "text": "{{List2.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  currentItem.feedback;\n              })();\n            })}}",
                                   "fontSize": "1rem",
                                   "fontStyle": "BOLD",
                                   "textAlign": "LEFT",
@@ -1503,6 +1515,12 @@
                                 },
                                 {
                                   "key": "primaryColor"
+                                },
+                                {
+                                  "key": "template.Text11.text"
+                                },
+                                {
+                                  "key": "template.Text12.text"
                                 }
                               ],
                               "gridType": "vertical",
@@ -1588,9 +1606,9 @@
                                               "leftColumn": 1,
                                               "shouldTruncate": false,
                                               "truncateButtonColor": "#FFC13D",
-                                              "text": "{{currentItem.name}}",
+                                              "text": "{{currentItem.feedback}}",
                                               "key": "akaffkfw62",
-                                              "rightColumn": 13,
+                                              "rightColumn": 25,
                                               "textAlign": "LEFT",
                                               "widgetId": "k6mgsx3ro1",
                                               "logBlackList": {
@@ -1659,7 +1677,7 @@
                                               "leftColumn": 1,
                                               "shouldTruncate": false,
                                               "truncateButtonColor": "#FFC13D",
-                                              "text": "{{currentItem.id}}",
+                                              "text": "{{currentItem.feedback}}",
                                               "key": "akaffkfw62",
                                               "rightColumn": 9,
                                               "textAlign": "LEFT",
@@ -2843,12 +2861,16 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Candidate Management_GetInterviewFeedbacks",
               "name": "GetInterviewFeedbacks",
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "appsmith.store.currentCandidate._id"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
