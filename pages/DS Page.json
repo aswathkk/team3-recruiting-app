@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page3",
-    "slug": "page3",
+    "name": "DS Page",
+    "slug": "ds-page",
     "layouts": [
       {
         "viewMode": false,
@@ -27,15 +27,19 @@
           "children": []
         },
         "layoutOnLoadActions": [],
+        "widgetNames": [
+          "MainContainer"
+        ],
         "validOnPageLoadActions": true,
-        "id": "Page3",
+        "id": "DS Page",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "policies": [],
