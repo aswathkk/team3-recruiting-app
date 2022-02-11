@@ -338,7 +338,7 @@
                       "textSize": "PARAGRAPH",
                       "widgetId": "xonzqcm1to",
                       "isVisibleFilters": false,
-                      "tableData": "{{Role_Interview_Js.roundData}}",
+                      "tableData": "{{appsmith.store.roundData ? appsmith.store.roundData : []}}",
                       "isVisible": true,
                       "label": "Data",
                       "searchKey": "",

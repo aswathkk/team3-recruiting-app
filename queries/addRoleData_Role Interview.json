@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tlet roleData = {\n\t\t\tname: Role_Name.text,\n\t\t\tdescription: Description.text,\n\t\t\tinterviewRound: appsmith.store.roundData,\n\t\t}\n\t}",
+      "body": "() => {\n\t\tlet roleData = {\n\t\t\tname: Role_Name.text,\n\t\t\tdescription: Description.text,\n\t\t\tinterviewRound: appsmith.store.roundData,\n\t\t};\n\t\t\t\t\n\t}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tlet roleData = {\n\t\t\tname: Role_Name.text,\n\t\t\tdescription: Description.text,\n\t\t\tinterviewRound: appsmith.store.roundData,\n\t\t}\n\t}"
+      "() => {\n\t\tlet roleData = {\n\t\t\tname: Role_Name.text,\n\t\t\tdescription: Description.text,\n\t\t\tinterviewRound: appsmith.store.roundData,\n\t\t};\n\t\t\t\t\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

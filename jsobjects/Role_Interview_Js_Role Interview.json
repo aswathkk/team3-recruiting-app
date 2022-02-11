@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\troleData: {},\n\taddRoundData: () => {\n\t\tif (!appsmith.store.roundData) {\n\t\t\tstoreValue('roundData', [])\n\t\t}\n\t\t\n\t\tstoreValue('roundData', [\n\t\t\t...appsmith.store?.roundData,\n\t\t\t\t{\n\t\t\t\t\tname: roundName.text,\n\t\t\t\t\tdescription: roundDescription.text,\n\t\t\t\t\torder: roundOrder.text,\n\t\t\t\t}\n\t\t\t])\n\t},\n\taddRoleData: () => {\n\t\tlet roleData = {\n\t\t\tname: Role_Name.text,\n\t\t\tdescription: Description.text,\n\t\t\tinterviewRound: appsmith.store.roundData,\n\t\t},\n\t\t\t\t\n\t}\n}",
+    "body": "export default {\n\troleData: {},\n\taddRoundData: () => {\n\t\tif (!appsmith.store.roundData) {\n\t\t\tstoreValue('roundData', [])\n\t\t}\n\t\t\n\t\tstoreValue('roundData', [\n\t\t\t...appsmith.store?.roundData,\n\t\t\t\t{\n\t\t\t\t\tname: roundName.text,\n\t\t\t\t\tdescription: roundDescription.text,\n\t\t\t\t\torder: roundOrder.text,\n\t\t\t\t}\n\t\t\t])\n\t},\n\taddRoleData: () => {\n\t\tlet roleData = {\n\t\t\tname: Role_Name.text,\n\t\t\tdescription: Description.text,\n\t\t\tinterviewRound: appsmith.store.roundData,\n\t\t};\n\t\t\t\t\n\t}\n}",
     "variables": [
       {
         "name": "roundData",
