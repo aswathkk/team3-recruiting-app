@@ -48,9 +48,6 @@
                 },
                 {
                   "key": "fontFamily"
-                },
-                {
-                  "key": "borderRadius"
                 }
               ],
               "text": "Submit",
@@ -65,7 +62,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "borderRadius": "1.5rem",
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             }

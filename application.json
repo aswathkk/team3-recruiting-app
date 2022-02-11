@@ -8,7 +8,7 @@
   "slug": "recruiting-app",
   "evaluationVersion": 2,
   "publishedModeThemeId": "61c57741db67aa7828fd7472",
-  "editModeThemeId": "default",
+  "editModeThemeId": "61c57741db67aa7828fd7472",
   "createdAt": {
     "seconds": 1644579089,
     "nanos": 488000000
