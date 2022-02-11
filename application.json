@@ -6,6 +6,12 @@
   "color": "#F4FFDE",
   "icon": "arrow-down",
   "slug": "recruiting-app",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
   "evaluationVersion": 2,
   "publishedModeThemeId": "61c57741db67aa7828fd7472",
   "editModeThemeId": "default",
