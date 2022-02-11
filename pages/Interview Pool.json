@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1168,
+          "rightColumn": 1936,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -121,9 +121,6 @@
               "dynamicBindingPathList": [
                 {
                   "key": "defaultTab"
-                },
-                {
-                  "key": "primaryColor"
                 }
               ],
               "children": [
@@ -541,11 +538,7 @@
                       "parentColumnSpace": 18.0625,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 0,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "primaryColor"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
                       "gridType": "vertical",
                       "enhancements": true,
                       "children": [
@@ -1542,17 +1535,7 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "primaryColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "fontFamily"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "countryCode": "US",
                               "labelStyle": "",
                               "isDisabled": false,
@@ -1567,7 +1550,7 @@
                               "parentId": "8baz5pmi1n",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             }
