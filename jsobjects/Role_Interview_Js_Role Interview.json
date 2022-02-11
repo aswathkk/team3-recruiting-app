@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "Role_Interview_Js",
+    "pageId": "Role Interview",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\troleData: {},\n\taddRoundData: () => {\n\t\tif (!appsmith.store.roundData) {\n\t\t\tstoreValue('roundData', [])\n\t\t}\n\t\t\n\t\tstoreValue('roundData', [\n\t\t\t...appsmith.store?.roundData,\n\t\t\t\t{\n\t\t\t\t\tname: roundName.text,\n\t\t\t\t\tdescription: roundDescription.text,\n\t\t\t\t\torder: roundOrder.text,\n\t\t\t\t}\n\t\t\t])\n\t},\n\taddRoleData: () => {\n\t\tlet roleData = {\n\t\t\tname: Role_Name.text,\n\t\t\tdescription: Description.text,\n\t\t\tinterviewRound: appsmith.store.roundData,\n\t\t},\n\t\t\t\t\n\t}\n}",
+    "variables": [
+      {
+        "name": "roundData",
+        "value": []
+      },
+      {
+        "name": "roleData",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Role Interview_Role_Interview_Js",
+  "deleted": false,
+  "gitSyncId": "62064911c36e5e39b5b25e04_6206542918e5c2130a48cbd0"
+}

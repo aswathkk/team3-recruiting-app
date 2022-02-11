@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "AddCandidate",
+    "name": "AddInterviewFeedback",
     "datasource": {
       "pluginId": "mongo-plugin",
       "messages": [],
@@ -19,9 +19,9 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": "INSERT",
-        "collection": "candidates",
+        "collection": "interviewFeedback",
         "insert": {
-          "documents": "{\n  \"name\": \"Nayan\",\n    \"email\": \"nayan@appsmith.com\",\n    \"phoneNumber\": \"+8801675120213\",\n    \"linkedUrl\": \"https://linkedin.com/in/test\",\n    \"role\": \"developer\",\n    \"status\": \"HIRED\",\n    \"resumeUrl\": \"http://sample.come\"\n}"
+          "documents": "{\"candidateId\": \"123456\",\n    \"interviewerId\": \"123456\",\n    \"interviewRound\": \"roundIdHere\",\n    \"feedback\": \"description Here\"}"
         }
       }
     },
@@ -36,7 +36,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page3_AddCandidate",
+  "id": "Page3_AddInterviewFeedback",
   "deleted": false,
-  "gitSyncId": "62064911c36e5e39b5b25e04_620653dc18e5c2130a48cbc0"
+  "gitSyncId": "62064911c36e5e39b5b25e04_62065c33312a98784dafbdd7"
 }

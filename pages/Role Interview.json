@@ -61,7 +61,7 @@
                   "widgetId": "jvzoub5sel",
                   "containerStyle": "none",
                   "topRow": 0,
-                  "bottomRow": 890,
+                  "bottomRow": 900,
                   "parentRowSpace": 1,
                   "isVisible": true,
                   "type": "CANVAS_WIDGET",
@@ -197,7 +197,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "widgetName": "Table1",
+                      "widgetName": "interviewRound",
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "step",
@@ -251,6 +251,9 @@
                         },
                         {
                           "key": "primaryColumns.name.computedValue"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "leftColumn": 1,
@@ -269,7 +272,7 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "Order",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.step))}}",
+                          "computedValue": "{{interviewRound.sanitizedTableData.map((currentRow) => ( currentRow.step))}}",
                           "labelColor": "#FFFFFF"
                         },
                         "task": {
@@ -286,7 +289,7 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "Description",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.task))}}",
+                          "computedValue": "{{interviewRound.sanitizedTableData.map((currentRow) => ( currentRow.task))}}",
                           "labelColor": "#FFFFFF"
                         },
                         "action": {
@@ -306,9 +309,9 @@
                           "label": "Round Name",
                           "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                           "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                          "computedValue": "{{interviewRound.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
                           "labelColor": "#FFFFFF",
-                          "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Action'))}}"
+                          "buttonLabel": "{{interviewRound.sanitizedTableData.map((currentRow) => ( 'Action'))}}"
                         },
                         "name": {
                           "index": 2,
@@ -325,7 +328,7 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "name",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                          "computedValue": "{{interviewRound.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
                         }
                       },
                       "delimiter": ",",
@@ -335,7 +338,7 @@
                       "textSize": "PARAGRAPH",
                       "widgetId": "xonzqcm1to",
                       "isVisibleFilters": false,
-                      "tableData": "[\n  {\n    \"step\": \"#1\",\n    \"task\": \"Drop a table\",\n    \"name\": \"Text\"\n  },\n  {\n    \"step\": \"#2\",\n    \"task\": \"Create a query fetch_users with the Mock DB\",\n    \"name\": \"Text\"\n  },\n  {\n    \"step\": \"#3\",\n    \"task\": \"Bind the query using => fetch_users.data\",\n    \"action\": \"Text\"\n  }\n]",
+                      "tableData": "{{Role_Interview_Js.roundData}}",
                       "isVisible": true,
                       "label": "Data",
                       "searchKey": "",
@@ -362,8 +365,8 @@
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
-                      "topRow": 83,
-                      "bottomRow": 87,
+                      "topRow": 84,
+                      "bottomRow": 88,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -463,6 +466,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Button2",
+                      "onClick": "{{showModal('Round_Info')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
@@ -475,7 +479,11 @@
                       "animateLoading": true,
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 11.857421875,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 47,
                       "dynamicBindingPathList": [
                         {
@@ -525,7 +533,7 @@
             },
             {
               "boxShadow": "none",
-              "widgetName": "Modal1",
+              "widgetName": "Round_Info",
               "isCanvas": true,
               "displayName": "Modal",
               "iconSVG": "/static/media/icon.4975978e.svg",
@@ -552,13 +560,13 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 340,
+                  "bottomRow": 400,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 348,
+                  "minHeight": 396,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "dynamicBindingPathList": [],
@@ -566,7 +574,7 @@
                     {
                       "widgetName": "Icon1",
                       "rightColumn": 64,
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "onClick": "{{closeModal('Round_Info')}}",
                       "color": "#040627",
                       "iconName": "cross",
                       "displayName": "Icon",
@@ -618,12 +626,12 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "onClick": "{{closeModal('Round_Info')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
-                      "topRow": 26,
-                      "bottomRow": 30,
+                      "topRow": 34,
+                      "bottomRow": 38,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -660,15 +668,21 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Button4",
+                      "onClick": "{{Role_Interview_Js.addRoundData()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
-                      "topRow": 26,
-                      "bottomRow": 30,
+                      "topRow": 34,
+                      "bottomRow": 38,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 51,
                       "dynamicBindingPathList": [
                         {
@@ -703,8 +717,8 @@
                       "widgetName": "roundName",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
-                      "topRow": 9,
-                      "bottomRow": 13,
+                      "topRow": 8,
+                      "bottomRow": 14,
                       "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
                       "parentRowSpace": 10,
                       "autoFocus": false,
@@ -732,7 +746,7 @@
                       "isDisabled": false,
                       "key": "yotjah2i65",
                       "isRequired": false,
-                      "rightColumn": 62,
+                      "rightColumn": 44,
                       "widgetId": "0jwuc3ygui",
                       "isVisible": true,
                       "label": "Name:",
@@ -749,8 +763,8 @@
                       "widgetName": "roundDescription",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
-                      "topRow": 15,
-                      "bottomRow": 19,
+                      "topRow": 16,
+                      "bottomRow": 33,
                       "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
                       "parentRowSpace": 10,
                       "autoFocus": false,
@@ -795,8 +809,8 @@
                       "widgetName": "roundOrder",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
-                      "topRow": 21,
-                      "bottomRow": 25,
+                      "topRow": 8,
+                      "bottomRow": 14,
                       "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
                       "parentRowSpace": 10,
                       "autoFocus": false,
@@ -807,7 +821,7 @@
                       "parentColumnSpace": 6.9375,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 1,
+                      "leftColumn": 46,
                       "dynamicBindingPathList": [
                         {
                           "key": "primaryColor"
@@ -850,7 +864,7 @@
                 }
               ],
               "key": "mmcptcjamd",
-              "height": 348,
+              "height": 396,
               "rightColumn": 25,
               "detachFromLayout": true,
               "widgetId": "g8xf1fr7ff",
@@ -877,13 +891,13 @@
           "Description",
           "Icon1",
           "MainContainer",
-          "Modal1",
           "Role_Name",
-          "Table1",
+          "Round_Info",
           "Text1",
           "Text2",
           "Text3",
           "Text4",
+          "interviewRound",
           "roundDescription",
           "roundName",
           "roundOrder"

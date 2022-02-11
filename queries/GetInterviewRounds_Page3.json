@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "AddCandidate",
+    "name": "GetInterviewRounds",
     "datasource": {
       "pluginId": "mongo-plugin",
       "messages": [],
@@ -18,11 +18,8 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
-        "command": "INSERT",
-        "collection": "candidates",
-        "insert": {
-          "documents": "{\n  \"name\": \"Nayan\",\n    \"email\": \"nayan@appsmith.com\",\n    \"phoneNumber\": \"+8801675120213\",\n    \"linkedUrl\": \"https://linkedin.com/in/test\",\n    \"role\": \"developer\",\n    \"status\": \"HIRED\",\n    \"resumeUrl\": \"http://sample.come\"\n}"
-        }
+        "command": "FIND",
+        "collection": "interviewRounds"
       }
     },
     "executeOnLoad": false,
@@ -36,7 +33,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page3_AddCandidate",
+  "id": "Page3_GetInterviewRounds",
   "deleted": false,
-  "gitSyncId": "62064911c36e5e39b5b25e04_620653dc18e5c2130a48cbc0"
+  "gitSyncId": "62064911c36e5e39b5b25e04_620656d9312a98784dafbdae"
 }

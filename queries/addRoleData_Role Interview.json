@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "JSObject1.myFun2",
+    "name": "addRoleData",
+    "fullyQualifiedName": "Role_Interview_Js.addRoleData",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,14 +14,14 @@
       "userPermissions": []
     },
     "pageId": "Role Interview",
-    "collectionId": "Role Interview_JSObject1",
+    "collectionId": "Role Interview_Role_Interview_Js",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n\t\t//do async stuff here or use JS promises\n\t}",
+      "body": "() => {\n\t\tlet roleData = {\n\t\t\tname: Role_Name.text,\n\t\t\tdescription: Description.text,\n\t\t\tinterviewRound: appsmith.store.roundData,\n\t\t}\n\t}",
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -33,14 +33,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n\t\t//do async stuff here or use JS promises\n\t}"
+      "() => {\n\t\tlet roleData = {\n\t\t\tname: Role_Name.text,\n\t\t\tdescription: Description.text,\n\t\t\tinterviewRound: appsmith.store.roundData,\n\t\t}\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Role Interview_myFun2",
+  "id": "Role Interview_addRoleData",
   "deleted": false,
   "gitSyncId": "62064911c36e5e39b5b25e04_6206542918e5c2130a48cbcd"
 }
