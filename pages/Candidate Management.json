@@ -1585,12 +1585,12 @@
                                                   "key": "text"
                                                 }
                                               ],
-                                              "leftColumn": 16,
+                                              "leftColumn": 1,
                                               "shouldTruncate": false,
                                               "truncateButtonColor": "#FFC13D",
                                               "text": "{{currentItem.name}}",
                                               "key": "akaffkfw62",
-                                              "rightColumn": 28,
+                                              "rightColumn": 13,
                                               "textAlign": "LEFT",
                                               "widgetId": "k6mgsx3ro1",
                                               "logBlackList": {
@@ -1656,12 +1656,12 @@
                                                   "key": "text"
                                                 }
                                               ],
-                                              "leftColumn": 16,
+                                              "leftColumn": 1,
                                               "shouldTruncate": false,
                                               "truncateButtonColor": "#FFC13D",
                                               "text": "{{currentItem.id}}",
                                               "key": "akaffkfw62",
-                                              "rightColumn": 24,
+                                              "rightColumn": 9,
                                               "textAlign": "LEFT",
                                               "widgetId": "qdn4kt57mp",
                                               "logBlackList": {

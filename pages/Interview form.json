@@ -240,7 +240,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "RichTextEditor1",
+                              "widgetName": "textEditor",
                               "displayName": "Rich Text Editor",
                               "iconSVG": "/static/media/icon.b35e139c.svg",
                               "topRow": 7,
@@ -501,13 +501,13 @@
           "Container3",
           "MainContainer",
           "RadioGroup1",
-          "RichTextEditor1",
           "Text1",
           "Text3",
           "Text5",
           "Text6",
           "Text7",
-          "Text8"
+          "Text8",
+          "textEditor"
         ],
         "validOnPageLoadActions": true,
         "id": "Interview form",
