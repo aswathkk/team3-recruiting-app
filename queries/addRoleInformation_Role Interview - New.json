@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tlet data = {\n\t\t\tname: roleName.text,\n\t\t\tdescription: roleDescription.text,\n\t\t\trounds: appsmith.store.roundData ? appsmith.store.roundData : [],\n\t\t}\n\t\troleName.text = '',\n\t\t\troleDescription.text = '',\n\t\tconsole.log(data)\t\n\t}",
+      "body": "() => {\n\t\tlet data = {\n\t\t\tname: roleName.text,\n\t\t\tdescription: roleDescription.text,\n\t\t\trounds: appsmith.store.roundData ? appsmith.store.roundData : [],\n\t\t}\n\t\troleName.text = ''\n\t\troleDescription.text = ''\n\t\tconsole.log(data)\t\n\t}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tlet data = {\n\t\t\tname: roleName.text,\n\t\t\tdescription: roleDescription.text,\n\t\t\trounds: appsmith.store.roundData ? appsmith.store.roundData : [],\n\t\t}\n\t\troleName.text = '',\n\t\t\troleDescription.text = '',\n\t\tconsole.log(data)\t\n\t}"
+      "() => {\n\t\tlet data = {\n\t\t\tname: roleName.text,\n\t\t\tdescription: roleDescription.text,\n\t\t\trounds: appsmith.store.roundData ? appsmith.store.roundData : [],\n\t\t}\n\t\troleName.text = ''\n\t\troleDescription.text = ''\n\t\tconsole.log(data)\t\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

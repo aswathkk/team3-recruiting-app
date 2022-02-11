@@ -1481,7 +1481,7 @@
                               },
                               "boxShadow": "none",
                               "widgetName": "List2",
-                              "listData": "{{GetInterviewers.data}}",
+                              "listData": "{{GetInterviewFeedbacks.data}}",
                               "isCanvas": true,
                               "displayName": "List",
                               "iconSVG": "/static/media/icon.9925ee17.svg",
@@ -2845,8 +2845,8 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Candidate Management_GetInterviewers",
-              "name": "GetInterviewers",
+              "id": "Candidate Management_GetInterviewFeedbacks",
+              "name": "GetInterviewFeedbacks",
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000

@@ -21,7 +21,7 @@
         "command": "INSERT",
         "collection": "interviewFeedback",
         "insert": {
-          "documents": "{\"candidateId\": {{GetCandidates.data[0].candidateId}},\n    \"interviewerId\": ,\n    \"interviewRound\": \"roundIdHere\",\n    \"feedback\": \"description Here\"}"
+          "documents": "{\"candidateId\": {{GetCandidates.data[0].candidateId}},\n    \"interviewerId\": {{GetInterviewers.data[0].interviewerId}},\n    \"interviewRound\": {{GetCandidates.data[0].interviewRound}},\n    \"feedback\": \"description Here\"}"
         }
       }
     },
@@ -35,7 +35,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "GetCandidates.data[0].candidateId"
+      "GetCandidates.data[0].candidateId",
+      "GetCandidates.data[0].interviewRound",
+      "GetInterviewers.data[0].interviewerId"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
