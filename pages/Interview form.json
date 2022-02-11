@@ -13,19 +13,20 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 630,
+          "bottomRow": 1160,
           "containerStyle": "none",
           "snapRows": 63,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
           "version": 51,
-          "minHeight": 640,
+          "minHeight": 1170,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
+              "boxShadow": "none",
               "widgetName": "Text1",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -54,9 +55,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "fontSize": "1rem"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Text2",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -85,9 +88,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "fontSize": "1rem"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Text3",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -105,7 +110,7 @@
               "truncateButtonColor": "#FFC13D",
               "text": "",
               "key": "fmphhdbv26",
-              "rightColumn": 51,
+              "rightColumn": 49,
               "textAlign": "LEFT",
               "widgetId": "6dfm82ykst",
               "isVisible": true,
@@ -116,9 +121,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "fontSize": "1rem"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Text4",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -151,6 +158,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "fontSize": "1rem"
             }
           ]
