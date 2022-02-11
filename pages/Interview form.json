@@ -8,7 +8,7 @@
         "dsl": {
           "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1936,
+          "rightColumn": 822,
           "snapColumns": 64,
           "detachFromLayout": true,
           "widgetId": "0",
@@ -268,7 +268,7 @@
               "parentRowSpace": 10,
               "type": "RADIO_GROUP_WIDGET",
               "hideCard": false,
-              "defaultOptionValue": "Y",
+              "defaultOptionValue": "Hire",
               "animateLoading": true,
               "parentColumnSpace": 19.8125,
               "dynamicTriggerPathList": [],
@@ -344,6 +344,7 @@
               "fontSize": "1rem"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Text7",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -376,6 +377,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "fontSize": "1rem"
             },
             {
@@ -396,12 +398,6 @@
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "fontFamily"
                 }
               ],
               "text": "Submit",
@@ -416,7 +412,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "borderRadius": "0px",
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             }

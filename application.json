@@ -7,10 +7,10 @@
   "icon": "arrow-down",
   "slug": "recruiting-app",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "evaluationVersion": 2,
   "publishedModeThemeId": "61c57741db67aa7828fd7472",

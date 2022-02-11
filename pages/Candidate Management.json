@@ -2867,7 +2867,7 @@
                   "widgetName": "Canvas10",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 590,
+                  "bottomRow": 620,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -2932,89 +2932,6 @@
                       "fontSize": "1.25rem"
                     },
                     {
-                      "boxShadow": "none",
-                      "widgetName": "Button8",
-                      "onClick": "{{closeModal('createProfileModal')}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca02633.svg",
-                      "topRow": 49,
-                      "bottomRow": 53,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "leftColumn": 37,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "fontFamily"
-                        }
-                      ],
-                      "text": "Close",
-                      "isDisabled": false,
-                      "key": "9egg0xdu0l",
-                      "rightColumn": 49,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "r3tzoeoi9w",
-                      "buttonStyle": "PRIMARY",
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "5l6jyaeo5n",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "SECONDARY",
-                      "placement": "CENTER"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Button9",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca02633.svg",
-                      "topRow": 49,
-                      "bottomRow": 53,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "leftColumn": 49,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "fontFamily"
-                        }
-                      ],
-                      "text": "Confirm",
-                      "isDisabled": false,
-                      "key": "9egg0xdu0l",
-                      "rightColumn": 61,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "fopghr0qcy",
-                      "buttonStyle": "PRIMARY_BUTTON",
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "5l6jyaeo5n",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "PRIMARY",
-                      "placement": "CENTER"
-                    },
-                    {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "widgetName": "Form1",
                       "isCanvas": true,
@@ -3049,7 +2966,7 @@
                           "widgetId": "91e36agv5s",
                           "containerStyle": "none",
                           "topRow": 0,
-                          "bottomRow": 410,
+                          "bottomRow": 420,
                           "parentRowSpace": 1,
                           "isVisible": true,
                           "type": "CANVAS_WIDGET",
@@ -3069,8 +2986,8 @@
                               "widgetName": "Input1Copy1",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
-                              "topRow": 18,
-                              "bottomRow": 22,
+                              "topRow": 1,
+                              "bottomRow": 5,
                               "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
                               "parentRowSpace": 10,
                               "autoFocus": false,
@@ -3081,7 +2998,7 @@
                               "parentColumnSpace": 12.67669677734375,
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
-                              "leftColumn": 4,
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "primaryColor"
@@ -3091,17 +3008,15 @@
                                 },
                                 {
                                   "key": "fontFamily"
-                                },
-                                {
-                                  "key": "defaultText"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
+                              "placeholderText": "Enter Candidate Name",
                               "isDisabled": false,
                               "key": "v8v36eto4d",
                               "isRequired": false,
-                              "rightColumn": 24,
+                              "rightColumn": 20,
                               "widgetId": "pypuhi9s09",
                               "isVisible": true,
                               "label": "Name",
@@ -3111,15 +3026,15 @@
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "iconAlign": "left",
-                              "defaultText": "{{appsmith.store.currentCandidate.candidateName}}"
+                              "defaultText": ""
                             },
                             {
                               "boxShadow": "none",
                               "widgetName": "Input3Copy1",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
-                              "topRow": 18,
-                              "bottomRow": 22,
+                              "topRow": 1,
+                              "bottomRow": 5,
                               "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
                               "parentRowSpace": 10,
                               "autoFocus": false,
@@ -3130,7 +3045,7 @@
                               "parentColumnSpace": 12.67669677734375,
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
-                              "leftColumn": 26,
+                              "leftColumn": 22,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "primaryColor"
@@ -3140,17 +3055,15 @@
                                 },
                                 {
                                   "key": "fontFamily"
-                                },
-                                {
-                                  "key": "defaultText"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
+                              "placeholderText": "Enter Candidate Role Applied",
                               "isDisabled": false,
                               "key": "v8v36eto4d",
                               "isRequired": false,
-                              "rightColumn": 46,
+                              "rightColumn": 42,
                               "widgetId": "rxo088hfgi",
                               "isVisible": true,
                               "label": "Role Applied",
@@ -3160,15 +3073,15 @@
                               "isLoading": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "iconAlign": "left",
-                              "defaultText": "{{appsmith.store.currentCandidate.role}}"
+                              "defaultText": ""
                             },
                             {
                               "boxShadow": "none",
                               "widgetName": "Input2Copy1",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
-                              "topRow": 23,
-                              "bottomRow": 27,
+                              "topRow": 6,
+                              "bottomRow": 10,
                               "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
                               "parentRowSpace": 10,
                               "autoFocus": false,
@@ -3179,7 +3092,7 @@
                               "parentColumnSpace": 12.67669677734375,
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
-                              "leftColumn": 4,
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "primaryColor"
@@ -3196,10 +3109,11 @@
                               ],
                               "labelStyle": "",
                               "inputType": "EMAIL",
+                              "placeholderText": "Enter Candidate Email",
                               "isDisabled": false,
                               "key": "v8v36eto4d",
                               "isRequired": false,
-                              "rightColumn": 24,
+                              "rightColumn": 20,
                               "widgetId": "c1mw0at7r4",
                               "isVisible": true,
                               "label": "Email",
@@ -3217,8 +3131,8 @@
                               "dialCode": "+91",
                               "displayName": "Phone Input",
                               "iconSVG": "/static/media/icon.ec4f5c23.svg",
-                              "topRow": 23,
-                              "bottomRow": 27,
+                              "topRow": 6,
+                              "bottomRow": 10,
                               "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
                               "parentRowSpace": 10,
                               "autoFocus": false,
@@ -3229,7 +3143,7 @@
                               "parentColumnSpace": 12.67669677734375,
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
-                              "leftColumn": 26,
+                              "leftColumn": 22,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "primaryColor"
@@ -3246,10 +3160,11 @@
                               ],
                               "countryCode": "IN",
                               "labelStyle": "",
+                              "placeholderText": "Enter Candidate Phone number",
                               "isDisabled": false,
                               "key": "hqa4x53ui1",
                               "isRequired": false,
-                              "rightColumn": 46,
+                              "rightColumn": 42,
                               "widgetId": "ulkrxz0x4t",
                               "allowDialCodeChange": false,
                               "isVisible": true,
@@ -3267,8 +3182,8 @@
                               "widgetName": "Input6Copy1",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
-                              "topRow": 29,
-                              "bottomRow": 33,
+                              "topRow": 12,
+                              "bottomRow": 16,
                               "primaryColor": "{{appsmith.theme.colors.primaryColor}}",
                               "parentRowSpace": 10,
                               "autoFocus": false,
@@ -3279,7 +3194,7 @@
                               "parentColumnSpace": 12.67669677734375,
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
-                              "leftColumn": 4,
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "primaryColor"
@@ -3293,10 +3208,11 @@
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
+                              "placeholderText": "Enter Candidate LinkedIn URL",
                               "isDisabled": false,
                               "key": "v8v36eto4d",
                               "isRequired": false,
-                              "rightColumn": 40,
+                              "rightColumn": 36,
                               "widgetId": "5yzfknq88z",
                               "isVisible": true,
                               "label": "Update LinkedIn Profile Link",
@@ -3310,55 +3226,12 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Button2Copy1",
-                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "displayName": "Button",
-                              "iconSVG": "/static/media/icon.cca02633.svg",
-                              "topRow": 29,
-                              "bottomRow": 33,
-                              "parentRowSpace": 10,
-                              "type": "BUTTON_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                              "parentColumnSpace": 12.67669677734375,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 44,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "buttonColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "fontFamily"
-                                }
-                              ],
-                              "text": "Visit LinkedIn Profile",
-                              "isDisabled": false,
-                              "key": "9egg0xdu0l",
-                              "rightColumn": 60,
-                              "isDefaultClickDisabled": true,
-                              "widgetId": "xfh1byuum3",
-                              "isVisible": true,
-                              "recaptchaType": "V3",
-                              "version": 1,
-                              "parentId": "91e36agv5s",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "buttonVariant": "PRIMARY",
-                              "placement": "CENTER"
-                            },
-                            {
-                              "boxShadow": "none",
                               "widgetName": "Button3Copy1",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca02633.svg",
-                              "topRow": 35,
-                              "bottomRow": 39,
+                              "topRow": 18,
+                              "bottomRow": 22,
                               "parentRowSpace": 10,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
@@ -3366,7 +3239,7 @@
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 12.67669677734375,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 4,
+                              "leftColumn": 0,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -3378,10 +3251,10 @@
                                   "key": "fontFamily"
                                 }
                               ],
-                              "text": "Download Resume",
+                              "text": "Upload Resume",
                               "isDisabled": false,
                               "key": "9egg0xdu0l",
-                              "rightColumn": 20,
+                              "rightColumn": 16,
                               "isDefaultClickDisabled": true,
                               "widgetId": "7xh4t0yha4",
                               "isVisible": true,
@@ -3395,38 +3268,10 @@
                               "placement": "CENTER"
                             },
                             {
-                              "widgetName": "Text13",
-                              "displayName": "Text",
-                              "iconSVG": "/static/media/icon.97c59b52.svg",
-                              "topRow": 1,
-                              "bottomRow": 5,
-                              "type": "TEXT_WIDGET",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 1.5,
-                              "dynamicBindingPathList": [],
-                              "shouldTruncate": false,
-                              "truncateButtonColor": "#FFC13D",
-                              "text": "",
-                              "key": "akaffkfw62",
-                              "rightColumn": 25.5,
-                              "textAlign": "LEFT",
-                              "widgetId": "7dbb463b7u",
-                              "isVisible": true,
-                              "fontStyle": "BOLD",
-                              "textColor": "#231F20",
-                              "shouldScroll": false,
-                              "version": 1,
-                              "parentId": "91e36agv5s",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "fontSize": "1.25rem"
-                            },
-                            {
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "FormButton1",
+                              "onClick": "{{closeModal('createProfileModal')}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.c8f649ed.svg",
@@ -3436,6 +3281,11 @@
                               "hideCard": true,
                               "animateLoading": true,
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 46,
                               "dynamicBindingPathList": [
                                 {
@@ -3467,6 +3317,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "FormButton2",
+                              "onClick": "{{closeModal('createProfileModal')}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "FormButton",
                               "iconSVG": "/static/media/icon.c8f649ed.svg",
@@ -3476,6 +3327,11 @@
                               "hideCard": true,
                               "animateLoading": true,
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 30,
                               "dynamicBindingPathList": [
                                 {
@@ -3488,7 +3344,7 @@
                                   "key": "fontFamily"
                                 }
                               ],
-                              "text": "Reset",
+                              "text": "Close",
                               "key": "z9q6n5bv16",
                               "rightColumn": 46,
                               "isDefaultClickDisabled": true,
@@ -3550,15 +3406,12 @@
         "widgetNames": [
           "Button2",
           "Button2Copy",
-          "Button2Copy1",
           "Button3",
           "Button3Copy",
           "Button3Copy1",
           "Button5",
           "Button6",
           "Button7",
-          "Button8",
-          "Button9",
           "Canvas1",
           "Canvas10",
           "Canvas11",
@@ -3607,7 +3460,6 @@
           "Text10",
           "Text11",
           "Text12",
-          "Text13",
           "Text2",
           "Text3",
           "Text4",
