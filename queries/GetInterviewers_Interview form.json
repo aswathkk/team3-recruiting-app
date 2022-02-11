@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "GetCandidates",
+    "name": "GetInterviewers",
     "datasource": {
       "pluginId": "mongo-plugin",
       "messages": [],
@@ -19,10 +19,10 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": "FIND",
-        "collection": "candidates"
+        "collection": "interviewers"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -33,7 +33,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Interview form_GetCandidates",
+  "id": "Interview form_GetInterviewers",
   "deleted": false,
-  "gitSyncId": "62064911c36e5e39b5b25e04_6206549818e5c2130a48cbd8"
+  "gitSyncId": "62064911c36e5e39b5b25e04_620654a218e5c2130a48cbda"
 }

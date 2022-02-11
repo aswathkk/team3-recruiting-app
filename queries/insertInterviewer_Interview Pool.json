@@ -20,7 +20,7 @@
       "body": "{\n  \"insert\": \"interviewers\",\n  \"documents\": [\n    {\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"availableRounds\": 1,\n      \"calendlyLink\": \"new value\",\n      \"designation\": \"new value\",\n      \"email\": \"new value\",\n      \"phone\": \"new value\",\n    }\n  ]\n}\n",
       "formData": {
         "insert": {
-          "documents": "[{      \n      \"availableRounds\": 1,\n      \"calendlyLink\": {{icalendly.text}},\n      \"designation\": {{idesignation.text}},\n      \"email\": {{iemail.text}},\n      \"phone\": {{iphone.text}},\n}]"
+          "documents": "[{      \n      \"availableRounds\": {{irole.selectedOptionValue}},\n      \"calendlyLink\": {{icalendly.text}},\n      \"designation\": {{idesignation.text}},\n      \"email\": {{iemail.text}},\n      \"phone\": {{iphone.text}},\n}]"
         },
         "collection": "interviewers",
         "command": "INSERT",
@@ -40,7 +40,8 @@
       "icalendly.text",
       "idesignation.text",
       "iemail.text",
-      "iphone.text"
+      "iphone.text",
+      "irole.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

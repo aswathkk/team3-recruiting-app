@@ -203,7 +203,7 @@
                       "isDisabled": false,
                       "key": "re5mna5cr3",
                       "isRequired": false,
-                      "rightColumn": 32,
+                      "rightColumn": 43,
                       "widgetId": "e0xwxp65bp",
                       "isVisible": true,
                       "label": "Name",
@@ -260,12 +260,12 @@
                       "widgetName": "roleRounds",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "step",
-                        "task",
-                        "status",
-                        "action"
+                        "order",
+                        "name",
+                        "description"
                       ],
                       "isVisibleDownload": true,
+                      "dynamicPropertyPathList": [],
                       "displayName": "Table",
                       "iconSVG": "/static/media/icon.db8a9cbd.svg",
                       "topRow": 61,
@@ -282,21 +282,6 @@
                       "dynamicTriggerPathList": [],
                       "dynamicBindingPathList": [
                         {
-                          "key": "primaryColumns.step.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.task.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.status.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.action.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.action.buttonColor"
-                        },
-                        {
                           "key": "primaryColor"
                         },
                         {
@@ -310,14 +295,23 @@
                         },
                         {
                           "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.name.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.order.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.description.computedValue"
                         }
                       ],
                       "leftColumn": 2,
                       "primaryColumns": {
-                        "step": {
+                        "name": {
                           "index": 0,
                           "width": 150,
-                          "id": "step",
+                          "id": "name",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -325,33 +319,16 @@
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "order",
-                          "computedValue": "{{roleRounds.sanitizedTableData.map((currentRow) => ( currentRow.step))}}",
-                          "labelColor": "#FFFFFF"
-                        },
-                        "task": {
-                          "index": 1,
-                          "width": 150,
-                          "id": "task",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "PARAGRAPH",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
+                          "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "name",
-                          "computedValue": "{{roleRounds.sanitizedTableData.map((currentRow) => ( currentRow.task))}}",
-                          "labelColor": "#FFFFFF"
+                          "computedValue": "{{roleRounds.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
                         },
-                        "status": {
-                          "index": 2,
+                        "order": {
+                          "index": 1,
                           "width": 150,
-                          "id": "status",
+                          "id": "order",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -359,31 +336,28 @@
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
+                          "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "description",
-                          "computedValue": "{{roleRounds.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
-                          "labelColor": "#FFFFFF"
+                          "label": "order",
+                          "computedValue": "{{roleRounds.sanitizedTableData.map((currentRow) => ( currentRow.order))}}"
                         },
-                        "action": {
-                          "index": 3,
+                        "description": {
+                          "index": 2,
                           "width": 150,
-                          "id": "action",
+                          "id": "description",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "button",
+                          "columnType": "text",
                           "textSize": "PARAGRAPH",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": false,
-                          "isCellVisible": true,
+                          "isVisible": true,
                           "isDisabled": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "action",
-                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                          "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
-                          "computedValue": "{{roleRounds.sanitizedTableData.map((currentRow) => ( currentRow.action))}}",
-                          "labelColor": "#FFFFFF"
+                          "label": "description",
+                          "computedValue": "{{roleRounds.sanitizedTableData.map((currentRow) => ( currentRow.description))}}"
                         }
                       },
                       "delimiter": ",",
@@ -393,7 +367,7 @@
                       "textSize": "PARAGRAPH",
                       "widgetId": "lagska4n57",
                       "isVisibleFilters": true,
-                      "tableData": "{{appsmith.store.roundData ? appsmith.store.roundData : null}}",
+                      "tableData": "{{appsmith.store.roundData ? appsmith.store.roundData : []}}",
                       "isVisible": true,
                       "label": "Data",
                       "searchKey": "",
@@ -708,6 +682,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Button2",
+                      "onClick": "{{Role_JS.addRoundData()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
@@ -717,6 +692,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 50,
                       "dynamicBindingPathList": [
                         {

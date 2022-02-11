@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "GetCandidates",
+    "name": "AddInterviewFeedbackCopy",
     "datasource": {
       "pluginId": "mongo-plugin",
       "messages": [],
@@ -18,11 +18,14 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
-        "command": "FIND",
-        "collection": "candidates"
+        "command": "INSERT",
+        "collection": "interviewFeedback",
+        "insert": {
+          "documents": "{\"candidateId\": \"123456\",\n    \"interviewerId\": \"123456\",\n    \"interviewRound\": \"roundIdHere\",\n    \"feedback\": \"description Here\"}"
+        }
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -33,7 +36,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Interview form_GetCandidates",
+  "id": "Interview form_AddInterviewFeedbackCopy",
   "deleted": false,
-  "gitSyncId": "62064911c36e5e39b5b25e04_6206549818e5c2130a48cbd8"
+  "gitSyncId": "62064911c36e5e39b5b25e04_620662b2cfed45736718b683"
 }

@@ -12,7 +12,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page3",
+    "pageId": "Candidate Management",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -22,7 +22,7 @@
         "collection": "interviewers"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -33,7 +33,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page3_GetInterviewers",
+  "id": "Candidate Management_GetInterviewers",
   "deleted": false,
-  "gitSyncId": "62064911c36e5e39b5b25e04_620654a218e5c2130a48cbda"
+  "gitSyncId": "62064911c36e5e39b5b25e04_620663d2cfed45736718b687"
 }

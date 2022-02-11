@@ -21,7 +21,7 @@
         "command": "INSERT",
         "collection": "candidates",
         "insert": {
-          "documents": "{\n  \"name\": {{Input1Copy1.text}},\n    \"email\": {{Input2Copy1.text}},\n    \"phoneNumber\": {{PhoneInput1Copy1.text}},\n    \"linkedUrl\": {{Input6Copy1.text}},\n    \"role\": {{role.text}},\n    \"status\": \"HIRED\",\n    \"resumeUrl\": \"http://sample.come\"\n}"
+          "documents": "{\n  \"name\": {{Input1Copy1.text}},\n    \"email\": {{Input2Copy1.text}},\n    \"phoneNumber\": {{PhoneInput1Copy1.text}},\n    \"linkedUrl\": {{Input6Copy1.text}},\n    \"role\": {{role.text}},\n    \"status\": {{Input4.text}},\n    \"resumeUrl\": {{Input6Copy1Copy.text}}\n}"
         }
       }
     },
@@ -37,7 +37,9 @@
     "jsonPathKeys": [
       "Input1Copy1.text",
       "Input2Copy1.text",
+      "Input4.text",
       "Input6Copy1.text",
+      "Input6Copy1Copy.text",
       "PhoneInput1Copy1.text",
       "role.text"
     ],

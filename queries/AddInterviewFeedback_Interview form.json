@@ -21,16 +21,22 @@
         "command": "INSERT",
         "collection": "interviewFeedback",
         "insert": {
-          "documents": "{\"candidateId\": \"123456\",\n    \"interviewerId\": \"123456\",\n    \"interviewRound\": \"roundIdHere\",\n    \"feedback\": \"description Here\"}"
+          "documents": "{\"candidateId\": {{GetCandidates.data[0].candidateId}},\n    \"interviewerId\": ,\n    \"interviewRound\": \"roundIdHere\",\n    \"feedback\": \"description Here\"}"
         }
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.insert.documents"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "GetCandidates.data[0].candidateId"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

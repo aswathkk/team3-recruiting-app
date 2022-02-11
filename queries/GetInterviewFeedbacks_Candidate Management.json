@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "GetCandidates",
+    "name": "GetInterviewFeedbacks",
     "datasource": {
       "pluginId": "mongo-plugin",
       "messages": [],
@@ -12,17 +12,20 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Interview form",
+    "pageId": "Candidate Management",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "formData": {
         "command": "FIND",
-        "collection": "candidates"
+        "collection": "interviewFeedback",
+        "find": {
+          "query": "{\"candidateId\": \"2\" }"
+        }
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -33,7 +36,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Interview form_GetCandidates",
+  "id": "Candidate Management_GetInterviewFeedbacks",
   "deleted": false,
-  "gitSyncId": "62064911c36e5e39b5b25e04_6206549818e5c2130a48cbd8"
+  "gitSyncId": "62064911c36e5e39b5b25e04_6206642fcfed45736718b689"
 }
